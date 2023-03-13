@@ -11,9 +11,6 @@ imgs.forEach(img =>
 {
     img.addEventListener('click', (e) =>
     {
-        // if(e.target !== e.currentTarget){
-        //     console.log(e.target);
-        // }
         console.log("clicked");
         image.src = img.src
         lightbox.classList.add('active')
