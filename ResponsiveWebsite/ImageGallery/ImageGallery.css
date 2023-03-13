@@ -1,0 +1,84 @@
+
+
+body{
+    text-align: center;
+    background-image: url("./images/op-back.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+    /* overflow: hidden; */
+    
+}
+
+#overlay{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    height: 100%;
+    width: 100%;
+}
+#overlay.active{
+    display: flex;  
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+#overlay.active div{
+    width: 80%;
+    text-align: end;
+    margin: 5px;
+    color: red;
+    font-weight: 900;
+    font-size: xx-large;
+}
+
+#overlay.active p{
+    display: inline;
+    cursor: pointer;
+}
+
+#overlay.active img{
+    width: 80%;
+    height: 80%;
+}
+
+
+
+.container{
+    width: 90%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    margin: auto;
+}
+
+.container div{
+    margin: 0;
+    border: 4px solid black;
+    border-radius: 10px;
+}
+
+img{
+    max-width: 100%;
+    height: 100%;
+    display: block;
+    opacity: 0.9;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.vertical {
+    grid-row: span 2;
+}
+
+@media only screen and (max-width:500px){
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
+}

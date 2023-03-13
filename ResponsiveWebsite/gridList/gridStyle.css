@@ -1,0 +1,82 @@
+.aim {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+body {
+    background-color: #181823;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    margin-right: 5px;
+}
+
+button :hover{
+    cursor: pointer;
+    color: yellow;
+}
+
+button img{
+    height: 35px;
+}
+
+
+.container {
+    background-color: #C0EEF2;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.desc {
+    text-align: start;
+    padding: 10px;
+}
+
+.grid{
+    display: grid;
+    text-align: center;
+    grid-template-columns: 45% 45%;
+    column-gap: 10px;
+    row-gap: 10px;
+    justify-content: center;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.header .name {
+    text-align: start;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.image img{
+    height: 150px;
+    min-width: 0;
+    width: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+}
+
+
+.navBar{
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    align-items: center;
+}
+
+
+
+
